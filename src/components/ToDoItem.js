@@ -7,7 +7,7 @@ function ToDoItem(props) {
                 >
                     {props.todo.task}
                 </p>
-                <span onClick={() => props.deleteTodo(props.todo.id)}>Delete</span>
+                <span style={{cursor:"pointer"}} onClick={() => props.deleteTodo(props.todo.id)}>Delete</span>
             </div>
     );
 };
